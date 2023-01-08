@@ -9,4 +9,4 @@ RUN microdnf install --nodocs java-11-openjdk-headless && microdnf clean all
 
 WORKDIR /work/
 
-EXPOSE 8080
+EXPOSE 80
