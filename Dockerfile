@@ -10,3 +10,8 @@ RUN microdnf install --nodocs java-11-openjdk-headless && microdnf clean all
 WORKDIR /work/
 
 EXPOSE 80
+
+
+RUN mkdir /datadog
+RUN chmod 777 /datadog
+COPY datadog/dd-java-agent.jar /datadog
